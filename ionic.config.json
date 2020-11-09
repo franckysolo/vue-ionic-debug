@@ -1,0 +1,7 @@
+{
+  "name": "traide-debug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
