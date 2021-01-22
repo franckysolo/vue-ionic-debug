@@ -3,6 +3,7 @@
     <ion-header :translucent="true">
       <ion-toolbar>
         <ion-title>Blank</ion-title>
+        <ion-back-button slot="end"></ion-back-button>
       </ion-toolbar>
     </ion-header>
 
@@ -14,33 +15,31 @@
       </ion-header>
 
       <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p><router-link to="/about">About</router-link></p>
-        <p><router-link to="/ion-select">Ion Select Issue</router-link></p>
-        <p><router-link to="/scan">Scan code</router-link></p>
-        <p><router-link to="/login">Test Ion Input</router-link></p>
+        <strong>About us?</strong>
+        <p><router-link to="/">Home</router-link></p>
       </div>
     </ion-content>
   </ion-page>
 </template>
 
 <script>
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonBackButton } from '@ionic/vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'Home',
+  name: 'About',
   components: {
     IonContent,
     IonHeader,
     IonPage,
     IonTitle,
-    IonToolbar
+    IonToolbar,
+    IonBackButton
   }
 });
 </script>
 
-<style scoped>
+<style lang="css" scoped>
 #container {
   text-align: center;
 
