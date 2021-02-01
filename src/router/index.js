@@ -4,12 +4,18 @@ import About from '../views/About.vue'
 import Debug from '../views/Debug.vue'
 import Scan from '../views/Scan.vue'
 import Login from '../views/Login.vue'
+import LifeCycle from '../views/LifeCycle.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/lifecycle',
+    name: 'LifeCycle',
+    component: LifeCycle
   },
   {
     path: '/about',

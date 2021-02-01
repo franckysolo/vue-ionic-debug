@@ -14,7 +14,7 @@
         @submit.prevent="handleSubmit($event, onSubmit)">
         <ion-item>
           <ion-label position="floating">Email</ion-label>
-          <v-field name="email" as="ion-input"/>
+          <v-field name="email" as="ion-input" autocapitalize="words"/>
           <v-error name="email" />
         </ion-item>
         <ion-item>

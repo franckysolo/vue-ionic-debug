@@ -15,14 +15,13 @@
             :initial-values="form"
             @submit.prevent="handleSubmit($event, onSubmit)">
             <ion-button @click="populateVin">Test random vin</ion-button>
-
           <v-field name="vin" as="ion-input" v-model="form.vin" placeholder="Enter vin or scan it" />
           <v-error name="vin" />
-
           <pre>
             initial values {{ form }}
             errors  {{ errors }}
             form values {{ values }}
+            vinData {{ vinData }}
           </pre>
         </v-form>
       </div>
@@ -65,6 +64,7 @@ export default defineComponent({
   data () {
     return {
       vin: null,
+      vinData: {},
       form: {
         vin: ''
       },
@@ -95,6 +95,7 @@ export default defineComponent({
       try {
         const data = await BarcodeScanner.scan()
         console.info(`Barcode data: ${data.text}`)
+        this.vinData = data
         this.form.vin = data.text
       } catch (e) {
         console.info(e)

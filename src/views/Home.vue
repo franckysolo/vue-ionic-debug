@@ -16,6 +16,7 @@
       <div id="container">
         <strong>Ready to create an app?</strong>
         <p><router-link to="/about">About</router-link></p>
+        <p><router-link to="/lifecycle">Lifecycle</router-link></p>
         <p><router-link to="/ion-select">Ion Select Issue</router-link></p>
         <p><router-link to="/scan">Scan code</router-link></p>
         <p><router-link to="/login">Test Ion Input</router-link></p>
