@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from '@ionic/vue-router';
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Debug from '../views/Debug.vue'
-import Scan from '../views/Scan.vue'
+//import Scan from '../views/Scan.vue'
+import Codebar from '../views/Codebar.vue'
 import Login from '../views/Login.vue'
 import LifeCycle from '../views/LifeCycle.vue'
 
@@ -28,10 +29,15 @@ const routes = [
     component: Debug
   },
   {
-    path: '/scan',
-    name: 'Scan',
-    component: Scan
+    path: '/codebar',
+    name: 'Codebar',
+    component: Codebar
   },
+  // {
+  //   path: '/scan',
+  //   name: 'Scan',
+  //   component: Scan
+  // },
   {
     path: '/login',
     name: 'Login',

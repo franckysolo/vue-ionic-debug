@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
@@ -103,4 +103,4 @@ export default defineComponent({
     }
   }
 })
-</script>
+</script> -->

@@ -11,7 +11,7 @@
   },
   "cordova": {
     "plugins": {
-      "phonegap-plugin-barcodescanner": {}
+      "capacitor-barcode-scanner": {}
     }
   },
   "linuxAndroidStudioPath": "/opt/android-studio/bin/studio.sh"
